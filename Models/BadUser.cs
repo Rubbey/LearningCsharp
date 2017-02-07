@@ -48,7 +48,7 @@ namespace Program_1.Models
         {
             if (age < 13)
             {
-                throw new Exception("Age must be greater or equal to 13.")
+                throw new Exception("Age must be greater or equal to 13.");
             }
             if (Age == age)
             {

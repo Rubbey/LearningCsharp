@@ -15,7 +15,7 @@ namespace Program_1.Models
           {
                if (Price <= 0)
                {
-                   throw new Exception("Price must be reater then 0.")
+                   throw new Exception("Price must be reater then 0.");
                }
 
                Id = id;
@@ -30,7 +30,7 @@ namespace Program_1.Models
                   }
                   IsPurchased = true;
               }
-          )
+          
 
 
     }

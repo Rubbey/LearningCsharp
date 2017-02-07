@@ -9,7 +9,9 @@ namespace ConsoleApplication
         {
             Console.WriteLine("Hello World!");
 
-            User dUser = new User("baduser@usr.com","secret");
+            User user = new User("baduser@usr.com","secret");
+            Order order1 = new Order(1, 100);
+            user.
             
         }
     }

@@ -11,6 +11,8 @@ namespace Program_1.Models
         public int Age { get; private set; }
         public bool IsActive { get; private set; }
         public DateTime UpdatedAt { get; private set; }
+        public decimal Founds { get; private set; }
+
         public User(string email, string password)
         {
             SetEmail(email);
@@ -76,6 +78,29 @@ namespace Program_1.Models
                 return;
             }
             IsActive = false;
+            Update();
+        }
+
+        public void IncreaseFounds(decimal founds)
+        {
+            if (founds <= 0) throw new Exception("Founds must be greater then 0.");
+            Founds += founds;
+            Update();
+        }
+        
+        public void PurchareOrder(Order order)
+        {
+            if (!IsActive)
+            {
+                throw new Exception("Only active users can purchase an order.");
+            }
+
+            decimal orderPrice = order.TotalPrice;
+            if (Founds - orderPrice < 0) throw new Exception("You don't have enauh money!");
+
+            order.Purchase();
+
+            Founds -= orderPrice;
             Update();
         }
         private void Update()

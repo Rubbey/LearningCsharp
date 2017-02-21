@@ -83,3 +83,6 @@
 -r:"C:\Users\Janusz\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll"
 -r:"C:\Users\Janusz\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll"
 "C:\Users\Janusz\Documents\VS Code\Program_1\Program.cs"
+"C:\Users\Janusz\Documents\VS Code\Program_1\Models\Car.cs"
+"C:\Users\Janusz\Documents\VS Code\Program_1\Models\Order.cs"
+"C:\Users\Janusz\Documents\VS Code\Program_1\Models\User.cs"
